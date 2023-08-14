@@ -1,10 +1,10 @@
 "use client";
 import { Button, Chip, Divider, User, Link } from "@nextui-org/react";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import React from "react";
 
-export default function iPage() {
-  const [user, setUser] = useState({
+export default function iOrMePage() {
+  const [user, setUser] = React.useState({
     email: "",
     username: "",
     isVerified: false,
@@ -20,7 +20,7 @@ export default function iPage() {
     }
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     getUserDetails(); // Call the function when the component mounts or updates
     console.log(user.isVerified);
   }, []);
