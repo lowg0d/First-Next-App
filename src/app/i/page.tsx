@@ -3,7 +3,7 @@ import { Button, Chip, Divider, User, Link } from "@nextui-org/react";
 import axios from "axios";
 import React from "react";
 
-export default function iOrMePage() {
+export default function MePage() {
   const [user, setUser] = React.useState({
     email: "",
     username: "",
